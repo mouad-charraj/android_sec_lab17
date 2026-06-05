@@ -1,5 +1,10 @@
 ﻿# LabSec17 - Reverse engineering Android
 
+
+## Auteur
+
+CHARRAJ Mouad
+
 ## Objectif
 
 Ce lab analyse l'application OWASP MSTG UnCrackable Level 3. Le travail couvre l'analyse Java avec Jadx, la decompilation avec apktool, le patch smali, l'analyse native de `libfoo.so`, puis la reconstruction de l'APK.
@@ -13,6 +18,11 @@ L'APK est ensuite decompilee avec apktool pour obtenir les fichiers smali et les
 La librairie `libfoo.so` est analysee dans un outil de reverse engineering. Le code natif est inspecte pour identifier la logique de verification et les controles anti-debug ou anti-Frida. Apres modification, l'APK est reconstruite, signee et reinstallee sur l'emulateur.
 
 Un script Python sert enfin a verifier la logique retrouvee dans le code natif et a confirmer le secret retrouve.
+
+
+## Auteur
+
+CHARRAJ Mouad
 
 ## Preuves
 
@@ -97,3 +107,7 @@ adb install -r UnCrackable-Level3-patched.apk
 
 L'application est analysee, patchee, reconstruite et reinstallee. Les controles initiaux sont contournes dans l'environnement de lab et la logique native permet de retrouver le secret.
 
+
+## Auteur
+
+CHARRAJ Mouad
